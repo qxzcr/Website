@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Ustawienia meta danych -->
+    <meta charset="UTF-8"> <!-- Ustawienie kodowania znaków na UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Zapewnia kompatybilność z Internet Explorerem -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsywność strony na urządzeniach mobilnych -->
+    <title>Trip to Japan</title> <!-- Tytuł strony wyświetlany na karcie przeglądarki -->
+
+    <!-- Linki do arkuszy stylów CSS -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Główny arkusz stylów -->
+    <link rel="stylesheet" href="css/sakura.css"> <!-- Styl dla animacji sakura -->
+
+    <!-- Link do jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery -->
+
+    <!-- Skrypt do animacji sakura -->
+    <script src="js/sakura.js" defer></script> <!-- Skrypt sakura, ładowany z atrybutem defer -->
+
+    <!-- Wbudowane style CSS -->
+    <style>
+        body {
+            background-color: #fee6f4; /* Początkowy kolor tła strony */
+            display: none; /* Ukrycie strony przed pełnym załadowaniem */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo strony -->
+    <div class="logo" style="background-image: url(img/logo.svg);"></div>
+
+    <!-- Sekcja z warstwami tła i treścią -->
+    <section class="layers">
+        <div class="layers__container">
+            <!-- Warstwa tła -->
+            <div class="layers__item layer-1" style="background-image: url(img/background.jpg);"></div>
+            <!-- Warstwa pierwsza -->
+            <div class="layers__item layer-2" style="background-image: url(img/layer1.png);"></div>
+            <!-- Główna warstwa z treścią -->
+            <div class="layers__item layer-3">
+                <div class="hero-content">
+                    <h1>Trip to Japan <span>Welcome</span></h1> <!-- Nagłówek strony -->
+                    <div class="hero-content__p">This site is about places I want to visit in Japan. Perhaps you will find something for yourself!</div> <!-- Krótki opis strony -->
+                    <button class="button-start">Click on me</button> <!-- Przycisk do przejścia na kolejną stronę -->
+                </div>
+            </div>
+            <!-- Warstwa z efektem deszczu -->
+            <div class="layers__item layer-4">
+                <canvas class="rain"></canvas>
+            </div>
+            <!-- Warstwa druga -->
+            <div class="layers__item layer-5" style="background-image: url(img/layer2.png);"></div>
+        </div>
+    </section>
+
+    <!-- Skrypty JavaScript -->
+    <script>
+        // Po załadowaniu dokumentu
+        $(document).ready(function() {
+            // Funkcja obsługi kliknięcia przycisku
+            $('.button-start').click(function() {
+                $('body').fadeOut(1500, function() { // Płynne zanikanie strony przez 1.5 sekundy
+                    $('body').css('background-color', '#FF78AE'); // Zmiana koloru tła na różowy
+                    window.location.href = 'about.html'; // Przekierowanie na stronę "about.html"
+                });
+            });
+        });
+
+        // Funkcja przekierowania na inną stronę z efektem zanikania
+        function redirectTo(url) {
+            // Szybkie zanikanie strony przed przejściem
+            $('body').fadeOut(200, function() {
+                window.location.href = url; // Przekierowanie na nową stronę
+            });
+        }
+
+        // Po załadowaniu dokumentu
+        $(document).ready(function() {
+            // Płynne pojawienie się strony
+            $('body').fadeIn(800); // Płynne pojawienie się strony przez 0.8 sekundy
+        });
+
+        // Po załadowaniu całego dokumentu HTML
+        document.addEventListener("DOMContentLoaded", function() {
+            // Inicjalizacja animacji sakura
+            var sakura = new Sakura('body', {
+                colors: [
+                    {
+                        gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+                        gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+                        gradientColorDegree: 120,
+                    },
+                    {
+                        gradientColorStart: 'rgba(255,189,189)',
+                        gradientColorEnd: 'rgba(227,170,181)',
+                        gradientColorDegree: 120,
+                    },
+                    {
+                        gradientColorStart: 'rgba(212,152,163)',
+                        gradientColorEnd: 'rgba(242,185,196)',
+                        gradientColorDegree: 120,
+                    },
+                ],
+                delay: 200, // Opóźnienie między opadaniem kolejnych płatków sakury
+            });
+        });
+    </script>
+
+</body>
+</html>

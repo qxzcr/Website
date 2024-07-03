@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Definicja kodowania znaków -->
+        <meta charset="utf-8">
+        <!-- Definicja zgodności z przeglądarkami -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Tytuł strony -->
+        <title>Sentra - Free Bootstrap Theme</title>
+
+        <!-- Opis strony -->
+        <meta name="description" content="">
+        <!-- Definicja obszaru widoku na urządzeniach mobilnych -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Ikona do wyświetlenia na urządzeniach Apple -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <!-- Importowanie czcionki z Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <!-- Importowanie skryptu Modernizr -->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Nagłówek strony dla urządzeń mobilnych -->
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <!-- Przycisk do rozwijania menu nawigacyjnego -->
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Menu nawigacyjne -->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#transport">Transport</a></li>
+                        <li><a href="#city">Cities</a></li>
+                        <li><a href="#references">References</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Nawigacja boczna -->
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Travel<em> with us</em></a>
+            </div>
+            <!-- Menu nawigacyjne -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" onclick="redirectTo('home.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick="redirectTo('about.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#transport" onclick="redirectTo('transport.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Transport
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#city" onclick="redirectTo('city.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Cities
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#references" onclick="redirectTo('references.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            References
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Ikony mediów społecznościowych -->
+            <ul class="social-icons">
+                <li><a href="https://pl-pl.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Treść strony -->
+        <div class="page-content">
+            <!-- Sekcja dotycząca transportu -->
+            <section id="transport" class="content-section">
+                <div class="section-heading">
+                    <!-- Nagłówek sekcji -->
+                    <h1>Types of<br><em> transportation </em></h1>
+                    <!-- Opis sekcji -->
+                    <p>In this section, you can learn about the various types of transportation available in Japan. Japan is renowned for its efficient and extensive transportation network, which includes trains, buses, subways, and more. Whether you're traveling within cities or exploring the countryside, Japan offers a wide range of transportation options to suit your needs.</p>
+                </div>
+                <div class="content-section">
+                    <!-- Zakładki -->
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <!-- Zakładki dla różnych typów transportu -->
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                                <li><a href="#tab1" class="active">Tickets and Passes</a></li>
+                                <li><a href="#tab2">Shinkansen</a></li>
+                                <li><a href="#tab3">Public transportation</a></li>
+                                <li><a href="#tab4">Other</a></li>
+                            </ul>
+                            <!-- Zawartość zakładek -->
+                            <section id="first-tab-group" class="tabgroup">
+                                <!-- Zakładka dotycząca biletów i karnetów -->
+                                <div id="tab1">
+                                    <ul>
+                                        <!-- Poszczególne elementy -->
+                                        <li>
+                                            <div class="item">
+                                                <!-- Treść -->
+                                                <div class="text-content">
+                                                    <!-- Nagłówek -->
+                                                    <h4>Regular tickets</h4>
+                                                    <!-- Opis -->
+                                                    <p>Regular tickets simply get you from A to B. The basic fare depends on the travel distance between your departure and destination station. The cost per kilometer is around 20 yen for short distances, and decreases to under 10 yen for longer trips.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>IC cards</h4>
+                                                    <p>There are ten major IC cards, including Suica and Icoca, that are interchangeably usable in most major cities in Japan. Furthermore, there are several minor IC cards whose usability is limited to local areas. IC cards can also be used for making purchases at many shops and restaurants across Japan. </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Rail passes</h4>
+                                                    <p>Rail passes entitle their holders to unlimited usage of trains in a designated area. There is a variety of nationwide and regional rail passes available in Japan. The most famous of them all is the nationwide Japan Rail Pass, but other rail passes can be more suitable, depending on your itinerary.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>City passes</h4>
+                                                    <p>Passes for unlimited city travel on subways, trams, trains and buses on one day and similar tickets are offered in many cities across Japan. Sometimes it is better than regular tickets. </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Famous symbol of Japan</h4>
+                                                    <p>The world-renowned high-speed passenger express combines speed, reliability, and unparalleled comfort. Shinkansen trains depart regularly from Tokyo and transport passengers throughout the country.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Types of Seats</h4>
+                                                    <p>There are three types of seats: unreserved, reserved, and green cars.For detailed information on all available routes and fares, please visit the official website.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Types of Shinkansen</h4>
+                                                    <p>There are three types of Tokaido-Sanyo Shinkansen: Nozomi ("hope"), Hikari ("light"), and Kodama ("echo"). Compared to the other two, Nozomi Shinkansen makes fewer stops. It's the fastest option for traveling to the Kansai region – to Kyoto, Osaka, Kobe, and beyond. Note: the JR Rail Pass is not valid on this specific route.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="tab3">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Local routes</h4>
+                                                    <p>Local bus routes span the entire country, including remote areas. Major cities offer convenient unified fare systems for travel. Many buses accept prepaid transportation cards (IC cards) like Suica. Passengers typically board through the front door. Stop names are usually duplicated in English.In small towns, the fare for bus rides depends on the distance traveled. In this case, you should enter through the middle door. Upon boarding, take a ticket, and when you exit, check the fare for your ticket number — it will be displayed on the screen at the front of the bus. Place the money in the box near the driver and exit through the front door. Please note that payment with IC cards on such routes may not always be available.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Regional Passes</h4>
+                                                    <p>In Japan, there are regional bus passes that allow unlimited travel within specific regions for a certain period of time. If you plan to travel extensively within one region, such a pass can be a wise purchase. 
+                                                        The Inter City Bus Pass is the most economical way to travel around the Hokkaido region. The pass covers all major cities on the second largest island in Japan. 
+                                                        The Sendai City Bus Ticket allows you to travel on buses within the city of Sendai for one day. 
+                                                        The Tohoku Highway Bus Ticket offers unlimited bus rides in six prefectures in the Tohoku region.
+                                                        If you plan to travel extensively in the Kanto region, we recommend purchasing the Greater Tokyo Pass for unlimited travel on certain buses and trains. This pass is available only to foreigners.</p>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Websites</h4>
+                                                    <p>Many bus companies have websites in English where you can find up-to-date information and book tickets. Explore them to find the most suitable route.For example, the Intercity Bus Information Service.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Taxi</h4>
+                                                    <p>Taxis in Japan are impeccably clean, and the level of service is high. Drivers do not deceive customers, and the fare is calculated by the meter. 
+                                                        Like in most countries, taxis are more expensive than public transportation, but sometimes they can be more economical, especially if you are traveling in a group of three or four people. In most taxis in major cities, you can usually use credit cards, but outside the city, you will likely need to pay in cash.
+                                                        The signs under the windshield show whether the taxi is available. They are usually in Japanese but have color markings. Red means the taxi is ready to take passengers, while green indicates that it is occupied.</p>
+                                                </div>
+                                            </div>
+                                        </li>                                
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>How much does a taxi cost?</h4>
+                                                    <p>The fare is calculated based on the distance shown on the meter, except for some routes with a fixed rate to airports and major attractions. Taxi drivers in Japan will not try to deceive passengers and will use GPS and the meter to get you from point A to point B as quickly as possible. An extra charge for nighttime hours is taken from 10:00 PM to 5:00 AM, and all expenses for traveling on toll roads are paid by the passenger.</p> 
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <div class="text-content">
+                                                    <h4>Bicycle</h4>
+                                                    <p>In many hotels and private establishments in Japan, bicycle rental services are offered. Typically, rental offices are located near railway stations. A bicycle is an inexpensive and convenient means of transportation. To rent a bike, you will need a passport. In most rental points, maps and guides are provided. In more modern companies, there are electric bicycles, which are very convenient in hilly areas.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <!-- Stopka strony -->
+                <p>
+                    <!-- Prawa autorskie -->
+                    Copyright &copy; 2019 Company Name
+                    <!-- Projekt graficzny -->
+                    . Design: TemplateMo
+                </p>
+            </section>
+        </div> <!-- Zamknięcie div.page-content -->
+
+        <!-- Skrypty JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Warunek wstawiający skrypt jQuery, jeśli nie został zaimportowany -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+                                    // Funkcja przekierowująca użytkownika do określonego adresu URL
+                                    function redirectTo(url) {
+                                        window.location.href = url;
+                                    }
+        </script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    </body>
+</html>

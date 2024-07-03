@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Ustawienia meta danych -->
+        <meta charset="utf-8"> <!-- Ustawienie kodowania znaków na UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- Zapewnia kompatybilność z Internet Explorerem -->
+        <title>Trip to Japan</title> <!-- Tytuł strony wyświetlany na karcie przeglądarki -->
+
+        <!-- Opis i ustawienia viewport -->
+        <meta name="description" content=""> <!-- Krótki opis strony dla wyszukiwarek -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsywność strony na urządzeniach mobilnych -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- Ikona aplikacji dla urządzeń Apple -->
+
+        <!-- Linki do arkuszy stylów CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Główny arkusz stylów Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"> <!-- Motyw Bootstrap -->
+        <link rel="stylesheet" href="css/fontAwesome.css"> <!-- Ikony FontAwesome -->
+        <link rel="stylesheet" href="css/light-box.css"> <!-- Styl dla galerii lightbox -->
+        <link rel="stylesheet" href="css/owl-carousel.css"> <!-- Styl dla karuzeli (slideshow) -->
+        <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Własny arkusz stylów -->
+
+        <!-- Import czcionki z Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <!-- Skrypt Modernizr dla wsparcia starszych przeglądarek -->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Nagłówek nawigacyjny dla urządzeń mobilnych -->
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <!-- Przycisk do rozwijania menu nawigacyjnego -->
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Navigation</span> <!-- Ukryty tekst dla czytników ekranowych -->
+                <span class="icon-bar"></span> <!-- Pasek ikony menu -->
+                <span class="icon-bar"></span> <!-- Pasek ikony menu -->
+                <span class="icon-bar"></span> <!-- Pasek ikony menu -->
+            </button>
+
+            <!-- Menu nawigacyjne -->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">About</a></li> <!-- Link do sekcji "About" -->
+                        <li><a href="#tokyo">Tokyo</a></li> <!-- Link do sekcji "Tokyo" -->
+                        <li><a href="#kyoto">Kyoto</a></li> <!-- Link do sekcji "Kyoto" -->
+                        <li><a href="#osaka">Osaka</a></li> <!-- Link do sekcji "Osaka" -->
+                        <li><a href="#nara">Nara</a></li> <!-- Link do sekcji "Nara" -->
+                        <li><a href="#fukuoka">Fukuoka</a></li> <!-- Link do sekcji "Fukuoka" -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Nawigacja boczna dla większych urządzeń (desktop) -->
+        <div class="sidebar-navigation hidden-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Travel<em> with us</em></a> <!-- Logo strony -->
+            </div>
+            <nav>
+                <ul>
+                    <!-- Lista odnośników z efektami CSS -->
+                    <li>
+                        <a href="#about" onclick="redirectTo('about.html')"> <!-- Link do sekcji "About" z funkcją JavaScript -->
+                            <span class="rect"></span> <!-- Dekoracyjny prostokąt -->
+                            <span class="circle"></span> <!-- Dekoracyjne kółko -->
+                            About <!-- Tekst odnośnika -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tokyo" onclick="redirectTo('tokyo.html')"> <!-- Link do sekcji "Tokyo" z funkcją JavaScript -->
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Tokyo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kyoto" onclick="redirectTo('kyoto.html')"> <!-- Link do sekcji "Kyoto" z funkcją JavaScript -->
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Kyoto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#osaka" onclick="redirectTo('osaka.html')"> <!-- Link do sekcji "Osaka" z funkcją JavaScript -->
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Osaka
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nara" onclick="redirectTo('nara.html')"> <!-- Link do sekcji "Nara" z funkcją JavaScript -->
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Nara
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#fukuoka" onclick="redirectTo('fukuoka.html')"> <!-- Link do sekcji "Fukuoka" z funkcją JavaScript -->
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Fukuoka
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Ikony mediów społecznościowych -->
+            <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li> <!-- Ikona Facebooka -->
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> <!-- Ikona LinkedIn -->
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li> <!-- Ikona Instagram -->
+            </ul>
+        </div>
+
+        <!-- Główna zawartość strony -->
+        <div class="page-content">
+            <!-- Sekcja atrakcji turystycznych w Fukuoka -->
+            <section class="attractions" id="tokyo">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1>City Guide<br><em>Fukuoka </em></h1> <!-- Nagłówek sekcji -->
+                        <p>Fukuoka is a vibrant city located on the northern shore of the island of Kyushu in Japan. 
+                            <br>It's known for its rich history, bustling shopping districts, delicious food, and beautiful parks. 
+                            <br>As one of Japan's largest cities, Fukuoka offers a diverse range of attractions and activities for visitors to enjoy.</p> <!-- Opis miasta Fukuoka -->
+                    </div>
+
+                    <!-- Pierwsza atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/tower.jpg" alt="Fukuoka Towers"> <!-- Zdjęcie Fukuoka Towers -->
+                        </div>
+                        <div class="description">
+                            <h4>Fukuoka Towers</h4> <!-- Nagłówek opisu -->
+                            <p>Standing at 234 meters tall, Fukuoka Tower is the tallest seaside tower in Japan. Visitors can take an elevator ride to the observation deck located 123 meters above ground level to enjoy stunning views of the city, Hakata Bay, and even as far as the Genkai Sea on clear days.</p> <!-- Opis Fukuoka Towers -->
+                        </div>
+                    </div>
+
+                    <!-- Druga atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/hakata.jpg" alt="Canal City Hakata"> <!-- Zdjęcie Canal City Hakata -->
+                        </div>
+                        <div class="description">
+                            <h4>Canal City Hakata</h4> <!-- Nagłówek opisu -->
+                            <p>Canal City Hakata in Fukuoka is a dynamic shopping and entertainment complex featuring a wide array of shops, restaurants, entertainment options, and a picturesque canal. It's a bustling hub where visitors can shop, dine, enjoy entertainment, and take in the scenic waterfront views.</p> <!-- Opis Canal City Hakata -->
+                        </div>
+                    </div>
+
+                    <!-- Trzecia atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/ohori.jpg" alt="Ohori Park"> <!-- Zdjęcie Ohori Park -->
+                        </div>
+                        <div class="description">
+                            <h4>Ohori Park</h4> <!-- Nagłówek opisu -->
+                            <p>Ohori Park, situated in the heart of Fukuoka, boasts a scenic landscape with walking paths, bridges, and gardens, perfect for leisurely strolls and picnics. Visitors can explore the park's historic features, including remnants of a former castle moat, traditional tea houses, and stone lanterns. Additionally, the park hosts various events throughout the year, such as cherry blossom festivals and cultural performances, adding to its charm and appeal.</p> <!-- Opis Ohori Park -->
+                        </div>
+                    </div>
+
+                    <!-- Czwarta atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/Fcastle.jpg" alt="Fukuoka Castle"> <!-- Zdjęcie Fukuoka Castle -->
+                        </div>
+                        <div class="description">
+                            <h4>Fukuoka Castle</h4> <!-- Nagłówek opisu -->
+                            <p>Fukuoka Castle, also known as Maizuru Castle, is a historic site located in Fukuoka City. Originally built in the early 17th century, the castle played a significant role in Japan's feudal history. While much of the original structure was destroyed over the years, visitors can still explore the castle grounds, which include reconstructed walls, gates, and watchtowers. The surrounding Maizuru Park offers picturesque views of the castle and the city skyline, making it a popular destination for history enthusiasts and nature lovers alike.</p> <!-- Opis Fukuoka Castle -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sekcja stopki -->
+            <section class="footer">
+                <p>Copyright &copy; 2019 Company Name
+                . Design: TemplateMo</p> <!-- Prawa autorskie i autor projektu -->
+            </section>
+        </div>
+
+        <!-- Skrypty JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery -->
+        <script src="js/vendor/bootstrap.min.js"></script> <!-- Skrypt Bootstrap -->
+        <script src="js/plugins.js"></script> <!-- Inne pluginy JavaScript -->
+        <script src="js/main.js"></script> <!-- Główny skrypt JavaScript -->
+        <script>
+            // Funkcja przekierowująca użytkownika na nową stronę
+            function redirectTo(url) {
+                window.location.href = url;
+            }
+        </script>
+
+        <!-- Alternatywne podłączenie jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    </body>
+</html>

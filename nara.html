@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Ustawienia meta danych -->
+        <meta charset="utf-8"> <!-- Ustawienie kodowania znaków na UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- Zapewnia kompatybilność z IE oraz Chrome -->
+        <title>Trip to Japan</title> <!-- Tytuł strony wyświetlany na karcie przeglądarki -->
+
+        <!-- Meta tagi dla SEO i responsywności -->
+        <meta name="description" content=""> <!-- Opis strony dla wyszukiwarek -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsywność strony na urządzeniach mobilnych -->
+
+        <!-- Ikona strony na urządzeniach mobilnych -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- Linki do arkuszy stylów CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"> <!-- Bootstrap Theme CSS -->
+        <link rel="stylesheet" href="css/fontAwesome.css"> <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="css/light-box.css"> <!-- Lightbox CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css"> <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/templatemo-style.css"> <!-- Główny arkusz stylów -->
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <!-- Skrypt Modernizr dla wykrywania funkcji HTML5 i CSS3 -->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>      
+    </head>
+
+    <body>
+        <!-- Nagłówek nawigacyjny dla mniejszych ekranów -->
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Navigation</span> <!-- Tekst dla czytników ekranowych -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Główne menu nawigacyjne -->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tokyo">Tokyo</a></li>
+                        <li><a href="#kyoto">Kyoto</a></li>
+                        <li><a href="#osaka">Osaka</a></li>
+                        <li><a href="#nara">Nara</a></li>
+                        <li><a href="#fukuoka">Fukuoka</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Nawigacja boczna dla większych ekranów -->
+        <div class="sidebar-navigation hidden-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Travel<em> with us</em></a> <!-- Logo z wyróżnionym tekstem -->
+            </div>
+            <nav>
+                <ul>
+                    <!-- Elementy menu nawigacyjnego -->
+                    <li>
+                        <a href="#about" onclick="redirectTo('about.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tokyo" onclick="redirectTo('tokyo.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Tokyo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kyoto" onclick="redirectTo('kyoto.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Kyoto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#osaka" onclick="redirectTo('osaka.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Osaka
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nara" onclick="redirectTo('nara.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Nara
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#fukuoka" onclick="redirectTo('fukuoka.html')">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Fukuoka
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Ikony mediów społecznościowych -->
+            <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Główna zawartość strony -->
+        <div class="page-content">
+            <!-- Sekcja atrakcji turystycznych w Nara -->
+            <section class="attractions" id="tokyo">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1>Discover <br><em>Nara</em></h1>
+                        <p>Nara, located in the Kansai region of Japan, is renowned for its rich history, ancient temples, 
+                            <br>and friendly roaming deer. As one of Japan's oldest cities, Nara was the country's capital in 
+                            <br>the 8th century and played a significant role in shaping Japan's culture and religion.</p>
+                    </div>
+
+                    <!-- Atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/park.jpg" alt="Nara Park">
+                        </div>
+                        <div class="description">
+                            <h4>Nara Park</h4>
+                            <p>Nara Park is famous for its large population of friendly deer, which are considered sacred messengers of the gods in Japanese culture. Visitors can enjoy feeding and interacting with these deer throughout the park. Aside from the deer, Nara Park is also home to several significant cultural and historical sites.</p> 
+                        </div>
+                    </div>
+
+                    <!-- Kolejna atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/todaiji.jpg" alt="Todai-ji Temple">
+                        </div>
+                        <div class="description">
+                            <h4>Todai-ji Temple</h4>
+                            <p>Todai-ji Temple is one of the most historically significant Buddhist temples in the country. Founded in the 8th century, Todai-ji is closely associated with Emperor Shomu and the influential monk Kukai (also known as Kobo Daishi). The main hall of Todai-ji, known as the Daibutsuden (Great Buddha Hall), is one of the largest wooden buildings in the world and houses the Daibutsu (Great Buddha) statue. The Daibutsu is a colossal bronze statue of Buddha Vairocana, standing over 15 meters tall. Originally constructed in the 8th century, the current statue dates back to the 18th century and is a marvel of ancient Japanese craftsmanship.</p> 
+                        </div>
+                    </div>
+
+                    <!-- Kolejna atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/kasuga.jpg" alt="Kasuga Taisha Shrine">
+                        </div>
+                        <div class="description">
+                            <h4>Kasuga Taisha Shrine</h4>
+                            <p>Kasuga Taisha Shrine is a prominent Shinto shrine. Established in the 8th century, it is renowned for its beautiful vermilion-lacquered buildings, serene atmosphere, and surrounding forested areas. The shrine is dedicated to the deity responsible for protecting the city of Nara and its residents. It is also known for its association with the powerful Fujiwara clan, who played a significant role in Japanese politics and culture during the Heian period.</p> 
+                        </div>
+                    </div>
+
+                    <!-- Kolejna atrakcja turystyczna -->
+                    <div class="attraction">
+                        <div class="image">
+                            <img src="cimg/hanami.jpg" alt="Cherry Blossoms during the spring season, Nara Park">
+                        </div>
+                        <div class="description">
+                            <h4>Cherry Blossoms during the spring season, Nara Park</h4>
+                            <p>The cherry blossoms typically bloom in early spring, usually in late March to early April, depending on the weather conditions. During this time, locals and tourists alike flock to Nara Park to witness the ephemeral beauty of the cherry blossoms and participate in traditional hanami (flower-viewing) picnics. The sight of the cherry blossoms in full bloom against the backdrop of historic temples and shrines, including Kasuga Taisha Shrine and Todai-ji Temple, creates a magical atmosphere that captivates visitors. Many people stroll along the park's pathways, enjoying the beauty of the flowers and taking photographs to commemorate the occasion.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sekcja stopki -->
+            <section class="footer">
+                <p>Copyright &copy; 2019 Company Name 
+                . Design: TemplateMo</p>
+            </section>
+        </div>
+
+        <!-- Skrypty JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery -->
+        <script src="js/vendor/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+        <script src="js/plugins.js"></script> <!-- Wtyczki JS -->
+        <script src="js/main.js"></script> <!-- Główny skrypt JS -->
+        <script>
+            // Funkcja przekierowania na inną stronę
+            function redirectTo(url) {
+                window.location.href = url;
+            }
+        </script>
+
+        <!-- Dodatkowy skrypt jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    </body>
+</html>
